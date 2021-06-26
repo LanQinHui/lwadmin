@@ -1,21 +1,23 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import RenderRouterView from "@/components/RenderRouterView";
 
 const routes = [
   {
     path: "/user",
+    component: RenderRouterView,
     children: [
       {
         path: "/user/login",
         name: "login",
         component: () =>
-          import(/* webpackChunkName: "user" */ "../views/About.vue"),
+          import(/* webpackChunkName: "user" */ "../views/user/Login"),
       },
       {
         path: "/user/register",
         name: "register",
         component: () =>
-          import(/* webpackChunkName: "user" */ "../views/About.vue"),
+          import(/* webpackChunkName: "user" */ "../views/user/Register"),
       },
     ],
   },
