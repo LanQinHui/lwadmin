@@ -24,6 +24,7 @@
       </a-layout-footer>
     </a-layout>
   </a-layout>
+  <SettingDrawer />
 </template>
 
 <script>
@@ -31,7 +32,7 @@ import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";
 import SiderMenu from "@/layouts/SiderMenu";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons-vue";
-
+import SettingDrawer from "@/components/SettingDrawer";
 export default {
   components: {
     Header,
@@ -39,10 +40,11 @@ export default {
     Footer,
     MenuUnfoldOutlined,
     MenuFoldOutlined,
+    SettingDrawer,
   },
   data() {
     return {
-      collapsed: true,
+      collapsed: false,
     };
   },
 };
