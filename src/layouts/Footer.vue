@@ -1,5 +1,5 @@
 <template>
-  <div>Ant Design Vue ©2021 Created by Ant UED</div>
+  <div>LW Admin ©2021 Created by LanQinHui</div>
 </template>
 
 <script>
