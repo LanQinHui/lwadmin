@@ -13,9 +13,33 @@
         />
       </div>
     </template>
-    <p>Some contents...</p>
-    <p>Some contents...</p>
-    <p>Some contents...</p>
+    <div>
+      <!--      <template>-->
+      <h2>整体风格定制</h2>
+      <a-radio-group v-model:value="navTheme">
+        <a-radio value="dark">深色</a-radio>
+        <a-radio value="light">白色</a-radio>
+      </a-radio-group>
+      <h2>导航模式</h2>
+      <a-radio-group v-model:value="navLayout">
+        <a-radio value="left">左侧</a-radio>
+        <a-radio value="top">顶部</a-radio>
+      </a-radio-group>
+      <!--      </template>-->
+      <!--      <script>-->
+      <!--        import { defineComponent, ref } from 'vue';-->
+      <!--        export default defineComponent({-->
+      <!--          setup() {-->
+      <!--            const navTheme = ref('dark');-->
+      <!--            const navLayout = ref('left');-->
+      <!--            return {-->
+      <!--              navTheme,-->
+      <!--              navLayout-->
+      <!--            };-->
+      <!--          },-->
+      <!--        });-->
+      <!--      </script>-->
+    </div>
   </a-drawer>
 </template>
 <script>
